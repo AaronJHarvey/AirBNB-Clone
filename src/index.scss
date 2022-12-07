@@ -7,6 +7,7 @@
 // Creates no gap between browser window edges and body elements
 body {
 	margin: 0;
+	font-family: poppins;
 }
 
 //  Navbar section
@@ -28,35 +29,29 @@ body {
 
 // Hero section
 
-.grid-container {
-	margin: 26px auto 32px;
+.hero {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	width: 100vw;
-	border: 1px solid blue;
+	padding: 26px;
 
-	& > img {
-		width: 75%;
+	& > .hero--grid {
+		max-width: 70%;
+		align-self: center;
 	}
-}
 
-h1,
-p {
-	font-family: poppins;
-	margin-left: 36px;
-}
+	& > .hero--header {
+		font-weight: 600;
+		font-size: 3.5rem;
+		line-height: 40px;
+		margin-top: 36px;
+	}
 
-h1 {
-	font-weight: 600;
-	// font-size: 36px;
-	font-size: 3.75rem;
-	line-height: 40px;
-}
-
-p {
-	max-width: 500px;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 110%;
-	margin-top: 0;
+	& > .hero--text {
+		max-width: 500px;
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 120%;
+		margin-top: -10px;
+	}
 }

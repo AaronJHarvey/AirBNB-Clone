@@ -3,12 +3,12 @@ import Grid from '../Images/photo-grid.png';
 
 export default function Hero () {
 	return (
-		<section>
-			<div className='grid-container'>
-				<img src={Grid} />
-			</div>
-			<h1>Online Experiences</h1>
-			<p>Join unique interactive activities led by one-of-a-kind hosts-all without leaving home.</p>
+		<section className='hero'>
+			<img className='hero--grid' src={Grid} />
+			<h1 className='hero--header'>Online Experiences</h1>
+			<p className='hero--text'>
+				Join unique interactive activities led by one-of-a-kind hosts-all without leaving home.
+			</p>
 		</section>
 	);
 }
