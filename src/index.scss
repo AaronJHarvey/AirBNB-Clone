@@ -3,6 +3,9 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.gray {
+	color: #918e9b;
+}
 
 // Creates no gap between browser window edges and body elements
 body {
@@ -55,6 +58,50 @@ body {
 		margin-top: -10px;
 	}
 }
+
+// Card section
+
+.card-cont {
+	margin-left: 26px;
+	border: 1px solid blue;
+
+	& > .profile-photo {
+		// border: 1px solid red;
+		border-radius: 10px;
+		width: 32%;
+	}
+
+	& > .review-info {
+		display: flex;
+		flex-direction: row;
+		height: 30px;
+		align-items: center;
+
+		& > .star-image {
+			height: 25px;
+			margin-right: 5px;
+		}
+
+		& > .rating {
+			font-size: 22px;
+			font-weight: bolder;
+		}
+
+		& > .rating-count {
+			font-size: 20px;
+		}
+	}
+	& > .title,
+	& > .cost {
+		font-size: 25px;
+		line-height: 15px;
+	}
+}
+
+// .profile-photo
+// .review-info > .star-image, .rating, .rating-count
+// .title
+// .cost
 
 // Media query for large screens
 

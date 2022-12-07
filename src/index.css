@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.gray {
+  color: #918e9b;
+}
+
 body {
   margin: 0;
   font-family: poppins;
@@ -57,6 +61,50 @@ body {
   font-size: 35px;
   line-height: 120%;
   margin-top: -10px;
+}
+
+.card-cont {
+  margin-left: 26px;
+  border: 1px solid blue;
+}
+
+.card-cont > .profile-photo {
+  border-radius: 10px;
+  width: 32%;
+}
+
+.card-cont > .review-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-cont > .review-info > .star-image {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.card-cont > .review-info > .rating {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.card-cont > .review-info > .rating-count {
+  font-size: 20px;
+}
+
+.card-cont > .title,
+.card-cont > .cost {
+  font-size: 25px;
+  line-height: 15px;
 }
 
 @media (min-width: 1441px) {
