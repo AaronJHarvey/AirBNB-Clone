@@ -17,14 +17,14 @@ body {
 	background-color: #fff;
 	-webkit-box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
-}
 
-.navbar > #logo {
-	position: absolute;
-	left: 30px;
-	top: 22px;
-	width: 102px;
-	height: 32px;
+	& > #logo {
+		position: absolute;
+		left: 30px;
+		top: 22px;
+		width: 102px;
+		height: 32px;
+	}
 }
 
 // Hero section
@@ -36,22 +36,45 @@ body {
 	padding: 26px;
 
 	& > .hero--grid {
-		max-width: 70%;
+		max-width: 75%;
 		align-self: center;
 	}
 
 	& > .hero--header {
 		font-weight: 600;
-		font-size: 3.5rem;
+		font-size: 5rem;
 		line-height: 40px;
 		margin-top: 36px;
 	}
 
 	& > .hero--text {
-		max-width: 500px;
+		max-width: 700px;
 		font-weight: 300;
-		font-size: 25px;
+		font-size: 35px;
 		line-height: 120%;
 		margin-top: -10px;
+	}
+}
+
+// Media query for large screens
+
+@media (min-width: 1441px) {
+	.navbar > #logo {
+		width: 150px;
+		height: 45px;
+		top: 13px;
+	}
+
+	.hero {
+		& > .hero--header {
+			font-weight: 600;
+			font-size: 6rem;
+			line-height: 40px;
+			margin-top: 36px;
+		}
+		& > .hero--text {
+			max-width: 800px;
+			font-size: 40px;
+		}
 	}
 }

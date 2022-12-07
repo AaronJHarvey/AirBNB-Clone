@@ -38,7 +38,7 @@ body {
 }
 
 .hero > .hero--grid {
-  max-width: 70%;
+  max-width: 75%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -46,16 +46,34 @@ body {
 
 .hero > .hero--header {
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 5rem;
   line-height: 40px;
   margin-top: 36px;
 }
 
 .hero > .hero--text {
-  max-width: 500px;
+  max-width: 700px;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 35px;
   line-height: 120%;
   margin-top: -10px;
+}
+
+@media (min-width: 1441px) {
+  .navbar > #logo {
+    width: 150px;
+    height: 45px;
+    top: 13px;
+  }
+  .hero > .hero--header {
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 40px;
+    margin-top: 36px;
+  }
+  .hero > .hero--text {
+    max-width: 800px;
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
