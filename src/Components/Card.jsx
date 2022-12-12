@@ -8,14 +8,14 @@ export default function Card (props) {
 			<img className='profile-photo' src={props.img} />
 			<div className='review-info'>
 				<img className='star-image' src={Star} />
-				<span className='rating'>5.0</span>
-				<span className='gray'>(6) • </span>
-				<span className='gray'>USA</span>
+				<span className='rating'>{props.rating}</span>
+				<span className='gray'>({props.reviewCount}) • </span>
+				<span className='gray'>{props.country}</span>
 			</div>
-			<p className='title'>Life Lessons with Katie Zaferes</p>
+			<p className='title'>{props.title}</p>
 			<h4 className='cost'>
 				<p>
-					<span>From $136 </span> /person
+					<span>From ${props.price} </span>/person
 				</p>
 			</h4>
 		</div>
