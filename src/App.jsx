@@ -10,7 +10,7 @@ export default function App () {
 			<Navbar />
 			{/* <Hero /> */}
 			<Card
-				img='src/Images/katie-zaferes.png'
+				img='katie-zaferes.png'
 				rating='5.0'
 				reviewCount={6}
 				country='USA'
