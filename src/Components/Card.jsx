@@ -2,10 +2,10 @@ import React from 'react';
 import KZ from '../Images/katie-zaferes.png';
 import Star from '../Images/star.png';
 
-export default function Card () {
+export default function Card (props) {
 	return (
 		<div className='card-cont'>
-			<img className='profile-photo' src={KZ} />
+			<img className='profile-photo' src={props.img} />
 			<div className='review-info'>
 				<img className='star-image' src={Star} />
 				<span className='rating'>5.0</span>
