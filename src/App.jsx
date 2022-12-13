@@ -6,7 +6,7 @@ import Card from './Components/Card';
 import data from './data';
 
 export default function App () {
-	const cardData = data.map((info) => <Card key={info.id} info={info} />);
+	const cardData = data.map((info) => <Card key={info.id} {...info} />);
 
 	return (
 		<div>
