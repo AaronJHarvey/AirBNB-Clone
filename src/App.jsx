@@ -6,19 +6,7 @@ import Card from './Components/Card';
 import data from './data';
 
 export default function App () {
-	const cardData = data.map((info) => (
-		<Card
-			img={info.coverImg}
-			rating={info.stats.rating}
-			reviewCount={info.stats.reviewCount}
-			location={info.location}
-			title={info.title}
-			price={info.price}
-			openSpots={info.openSpots}
-		/>
-	));
-
-	console.log(cardData);
+	const cardData = data.map((info) => <Card key={info.id} info={info} />);
 
 	return (
 		<div>
