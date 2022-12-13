@@ -85,6 +85,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .card > .profile-photo {
@@ -131,6 +132,16 @@ body {
 .card > .title {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card > .card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 @media (min-width: 1441px) {
