@@ -63,16 +63,36 @@ body {
   margin-top: -10px;
 }
 
-.card-cont {
+.cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
   margin-left: 26px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.card-cont > .profile-photo {
+.card > .profile-photo {
   border-radius: 10px;
-  width: 32%;
+  width: 75%;
 }
 
-.card-cont > .review-info {
+.card > .review-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,24 +106,31 @@ body {
           align-items: center;
 }
 
-.card-cont > .review-info > .star-image {
+.card > .review-info > .star-image {
   height: 25px;
   margin-right: 5px;
 }
 
-.card-cont > .review-info > .rating {
+.card > .review-info > .rating {
   font-size: 22px;
   font-weight: bolder;
 }
 
-.card-cont > .review-info > .rating-count {
+.card > .review-info > .rating-count {
   font-size: 20px;
 }
 
-.card-cont > .title,
-.card-cont > .cost {
+.card > .title,
+.card > .cost {
   font-size: 25px;
-  line-height: 15px;
+  line-height: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card > .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 1441px) {
